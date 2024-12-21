@@ -1,0 +1,141 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Login Popup */
+.login-popup {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    color: #000;
+}
+
+.login-popup h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Input Fields */
+.form-group {
+    margin-bottom: 20px;
+}
+
+input.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+    color: #000;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input.form-control::placeholder {
+    color: #888;
+}
+
+input.form-control:focus {
+    border-color: #000;
+    background-color: #fff;
+}
+
+/* Password Toggle */
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Links */
+.form-link a {
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.form-link a:hover {
+    text-decoration: underline;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px 15px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #444;
+}
+
+/* Register Account */
+.register-account {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.register-account a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.register-account a:hover {
+    text-decoration: underline;
+}
+
+/* Close Button */
+.close-form-login span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .login-popup {
+        padding: 20px 15px;
+    }
+    .login-popup h3 {
+        font-size: 20px;
+    }
+    input.form-control {
+        font-size: 14px;
+    }
+}
